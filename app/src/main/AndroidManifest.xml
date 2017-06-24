@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidessential.firebaseauth">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.androidessential.firebaseauth.ui.MainActivity"
+            android:label="@string/title_activity_main"
+            android:windowSoftInputMode="adjustPan">
+    </activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.androidessential.firebaseauth.ui.MainActivity" />
+
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androidessential.firebaseauth.ui.CreateAccountActivity"
+            android:label="@string/title_activity_create_account"
+            android:parentActivityName=".ui.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ui.EmailVerification"
+            android:label="Email Verification" />
+        <activity
+            android:name="com.androidessential.firebaseauth.ui.ResetPassword"
+            android:label="Reset Password">
+        </activity>
+
+    </application>
+
+</manifest>

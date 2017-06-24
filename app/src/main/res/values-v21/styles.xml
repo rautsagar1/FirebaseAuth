@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="FAB">
+        <item name="android:layout_margin">16dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/background_dark</item>
+    </style>
+
+    <style name="FAB2">
+        <item name="android:layout_margin">16dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/accent</item>
+    </style>
+</resources>
